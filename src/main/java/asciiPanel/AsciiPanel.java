@@ -103,8 +103,8 @@ public class AsciiPanel extends JPanel {
     private Graphics offscreenGraphics;
     private int widthInCharacters;
     private int heightInCharacters;
-    private int charWidth = 9;
-    private int charHeight = 16;
+    private int charWidth = 18;
+    private int charHeight = 32;
     private String terminalFontFile = "cp437_9x16.png";
     private Color defaultBackgroundColor;
     private Color defaultForegroundColor;
@@ -126,6 +126,10 @@ public class AsciiPanel extends JPanel {
     public int getCharHeight() {
         return charHeight;
     }
+    
+    public void setCharHeight(int height){
+    	this.charHeight = height;
+    }
 
     /**
      * Gets the width, in pixels, of a character.
@@ -133,6 +137,10 @@ public class AsciiPanel extends JPanel {
      */
     public int getCharWidth() {
         return charWidth;
+    }
+    
+    public void setCharWidth(int width){
+    	this.charWidth = width;
     }
 
     /**
